@@ -1,0 +1,117 @@
+/* src/components/HeroSection.module.css */
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0; /* Start with invisible */
+    transform: translateY(50px); /* Start with a downward offset */
+  }
+  to {
+    opacity: 1; /* End fully visible */
+    transform: translateY(0); /* End in its original position */
+  }
+}
+
+/* Keyframes for the smooth background color animation */
+@keyframes colorTransition {
+  0% {
+    background: linear-gradient(135deg, #4b0082, #6a0dad); /* Start color */
+  }
+  25% {
+    background: linear-gradient(
+      135deg,
+      #6a0dad,
+      #8a2be2
+    ); /* Transition color 1 */
+  }
+  50% {
+    background: linear-gradient(
+      135deg,
+      #8a2be2,
+      #4b0082
+    ); /* Transition color 2 */
+  }
+  75% {
+    background: linear-gradient(
+      135deg,
+      #4b0082,
+      #6a0dad
+    ); /* Transition color 3 */
+  }
+  100% {
+    background: linear-gradient(135deg, #6a0dad, #8a2be2); /* End color */
+  }
+}
+
+.heroContainer {
+  background: linear-gradient(
+    135deg,
+    #5bb7e6,
+    #1f4cc8
+  ); /* Purple gradient background */
+  padding: 6rem 2rem; /* Increase top padding to create space below the navbar */
+  text-align: center; /* Center-align the text */
+  border-radius: 20px; /* Rounded corners */
+  color: #fff; /* White text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25rem; /* Add margin on top to avoid overlap with the navbar */
+  position: relative;
+  width: 1200px;
+  /* Ensures the section respects layout rules */
+  animation: fadeInSlideUp 1s cubic-bezier(0.25, 0.1, 0.25, 1), colorTransition 30s linear infinite; 
+}
+
+.contentWrapper {
+  max-width: 1200px; /* Maximum width for the content */
+  margin: 0 auto; /* Center the content */
+}
+
+.title {
+  font-size: 3rem; /* Large font size for the title */
+  font-weight: 700;
+  margin-bottom: 1rem; /* Space below the title */
+}
+
+.highlight {
+  color: #d0a5f5; /* Lighter shade for the highlighted text */
+}
+
+.subtitle {
+  font-size: 1.2rem; /* Font size for the subtitle */
+  margin-bottom: 2rem; /* Space below the subtitle */
+  color: #e0e0e0; /* Lighter text color for the subtitle */
+}
+
+.profileImages {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between profile images */
+  margin-bottom: 2rem; /* Space below the images */
+}
+
+.profileImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Make images circular */
+  border: 2px solid #fff; /* White border around images */
+}
+
+.companyText {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-bottom: 1rem; /* Space below the text */
+}
+
+.companyLogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Space between logos */
+  margin-top: 1rem; /* Space above logos */
+}
+
+.logo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+}

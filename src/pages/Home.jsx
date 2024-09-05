@@ -1,8 +1,11 @@
-
+import HeroSection from '../components/HeroSection'
+import styles from '../pages/pageStyles/Home.module.css'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div className={styles.pageContainer}>
+        <HeroSection />
+    </div>
   )
 }
 

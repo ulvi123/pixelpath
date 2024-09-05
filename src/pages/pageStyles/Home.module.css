@@ -1,0 +1,17 @@
+.pageContainer {
+  max-width: 1200px; /* Maximum width for the page content */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 1rem 2rem; /* Add padding on the sides for spacing */
+  display: flex; /* Flexbox to enable centering */
+  flex-direction: column; /* Align content in a column */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 20vh; /* Adjust height to cover most of the viewport */
+}
+
+.homeContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}

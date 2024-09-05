@@ -2,12 +2,12 @@ import {
   Route,
   createBrowserRouter,
   createRoutesFromElements,
-  RouterProvider
+  RouterProvider,
 } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Courses from "./pages/Courses";
-import CourseDetail from './pages/CourseDetail';
+import CourseDetail from "./pages/CourseDetail";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import Testimonials from "./pages/Testimonials";
@@ -17,33 +17,33 @@ import FAQ from "./pages/FAQ";
 import Pricing from "./pages/Pricing";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-
+import MainLayout from "./MainLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-      <>
-      <Route index element={<Home />} />,
-      <Route path="/courses" element={<Courses />} />,
-      <Route path="/courses/:id" element={<CourseDetail />} />,
-      <Route path="/blog" element={<Blog />} />,
-      <Route path="/blog/:id" element={<BlogDetail />} />,
-      <Route path="/testimonials" element={<Testimonials />} />,
-      <Route path="/about" element={<About />} />,
-      <Route path="/contact" element={<Contact />} />,
-      <Route path="/faq" element={<FAQ />} />,
-      <Route path="/pricing" element={<Pricing />} />,
-      <Route path="/login" element={<Login />} />,
-      <Route path="/register" element={<Register />} />,
-      </>
+    <>
+        <Route index element={<MainLayout><Home /></MainLayout>} />,
+        <Route path="/courses" element={<MainLayout><Courses/></MainLayout>} />,
+        <Route path="/courses/:id" element={<MainLayout><CourseDetail /></MainLayout>} />,
+        <Route path="/blog" element={<MainLayout><Blog /></MainLayout>} />,
+        <Route path="/blog/:id" element={<MainLayout><BlogDetail /></MainLayout>} />,
+        <Route path="/testimonials" element={<MainLayout><Testimonials /></MainLayout>} />,
+        <Route path="/about" element={<MainLayout><About /></MainLayout>} />,
+        <Route path="/contact" element={<MainLayout><Contact /></MainLayout>} />,
+        <Route path="/faq" element={<MainLayout><FAQ /></MainLayout>} />,
+        <Route path="/pricing" element={<MainLayout><Pricing /></MainLayout>} />,
+        <Route path="/login" element={<MainLayout><Login /></MainLayout>} />,
+        <Route path="/register" element={<MainLayout><Register /></MainLayout>} />,
+    </>
   )
-)
+);
 
 function App() {
   return (
     <>
-     <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
