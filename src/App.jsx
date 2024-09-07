@@ -7,7 +7,7 @@ import {
 
 import Home from "./pages/Home";
 import Courses from "./pages/Courses";
-import CourseDetail from "./pages/CourseDetail";
+import CourseCard from "./pages/CourseCard";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import Testimonials from "./pages/Testimonials";
@@ -24,7 +24,7 @@ const router = createBrowserRouter(
     <>
         <Route index element={<MainLayout><Home /></MainLayout>} />,
         <Route path="/courses" element={<MainLayout><Courses/></MainLayout>} />,
-        <Route path="/courses/:id" element={<MainLayout><CourseDetail /></MainLayout>} />,
+        <Route path="/courses/:id" element={<MainLayout><CourseCard /></MainLayout>} />,
         <Route path="/blog" element={<MainLayout><Blog /></MainLayout>} />,
         <Route path="/blog/:id" element={<MainLayout><BlogDetail /></MainLayout>} />,
         <Route path="/testimonials" element={<MainLayout><Testimonials /></MainLayout>} />,

@@ -55,7 +55,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50rem; /* Add margin on top to avoid overlap with the navbar */
+  margin-top: 110rem; /* Add margin on top to avoid overlap with the navbar */
   position: relative;
   width: 1200px;
   /* Ensures the section respects layout rules */
