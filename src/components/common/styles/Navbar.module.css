@@ -94,7 +94,7 @@
   .navLink {
     color: #333; /* Dark gray color for navigation links */
     text-decoration: none; /* Remove underline */
-    font-size: 2rem; /* Font size */
+    font-size: 1rem; /* Font size */
     font-weight: 500; /* Slightly bolder text */
     transition: color 0.3s ease; /* Smooth color transition */
   }
