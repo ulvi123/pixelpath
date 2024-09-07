@@ -19,8 +19,6 @@ const mapImages = {
 
 
 function CourseCard() {
-  
-
   return (
     <div className={styles.coursesContainerGrid}>
       {courseData.courses.map((course) => (

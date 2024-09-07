@@ -6,7 +6,7 @@ import profile3 from "../assets/images/Tarmo.jpg";
 import profile4 from "../assets/images/Cem.jpg";
 import profile5 from "../assets/images/Vlad.jpg";
 import profile6 from "../assets/images/kamran.jpg";
-import logo1 from "../assets/images/AZMIU.png";
+import logo1 from "../assets/images/azmiu.png";
 import logo2 from "../assets/images/AZRTN.jpg";
 import logo3 from "../assets/images/g1s1.jpg";
 import logo4 from "../assets/images/Malwarebytes.png";
