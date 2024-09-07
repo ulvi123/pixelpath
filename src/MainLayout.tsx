@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './components/common/Navbar'
+import {Analytics} from '@vercel/analytics/react'
 
 function MainLayout({children}) {
   return (
@@ -7,6 +8,7 @@ function MainLayout({children}) {
       <Navbar />
       <main>
         {children}
+        <Analytics />
       </main>
     </div>
   )
