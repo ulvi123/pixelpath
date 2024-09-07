@@ -5,7 +5,7 @@ import java from "../assets/images/java.jpg";
 import azmiu from "../assets/images/azmiu.png";
 import kenan from "../assets/images/kanan.jpg";
 import tarmo from "../assets/images/Tarmo.jpg";
-import cem from "../assets/images/cem.jpg";
+import cem from "../assets/images/Cem.jpg";
 import malware from "../assets/images/Malwarebytes.png";
 
 const mapImages = {
@@ -13,8 +13,8 @@ const mapImages = {
   "azmiu.png": azmiu,
   "kanan.jpg": kenan,
   "Tarmo.jpg": tarmo,
-  "cem.jpg": cem,
-  "malware.jpg": malware,
+  "Cem.jpg": cem,
+  "Malwarebytes.jpg": malware,
 };
 
 
