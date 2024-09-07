@@ -12,7 +12,7 @@ const mapImages = {
   "java.jpg": java,
   "azmiu.png": azmiu,
   "kanan.jpg": kenan,
-  "tarmo.jpg": tarmo,
+  "Tarmo.jpg": tarmo,
   "cem.jpg": cem,
   "malware.jpg": malware,
 };
