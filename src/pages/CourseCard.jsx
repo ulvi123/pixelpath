@@ -4,7 +4,7 @@ import courseData from "../data/courses.json";
 import java from "../assets/images/java.jpg";
 import azmiu from "../assets/images/azmiu.png";
 import kenan from "../assets/images/kanan.jpg";
-import tarmo from "../assets/images/tarmo.jpg";
+import tarmo from "../assets/images/Tarmo.jpg";
 import cem from "../assets/images/cem.jpg";
 import malware from "../assets/images/Malwarebytes.png";
 
